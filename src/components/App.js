@@ -27,6 +27,7 @@ class App extends React.Component{
         )
     }    
     render(){
+        
     return (
         <div>
         {this.renderHeader()}
@@ -37,6 +38,6 @@ class App extends React.Component{
     }
 }
 function mapState(state){
-    return {auth:state.auth}
+    return {auth:state.auth,comments:state.comments}
 }
 export default connect(mapState,actions)(App)

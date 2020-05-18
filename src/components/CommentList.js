@@ -6,6 +6,8 @@ class CommentList extends React.Component{
         return this.props.comments.map(comment=><li>{comment}</li>)
     }
     render(){
+        console.log("this.props.comments",this.props.comments)
+
         return(
             <div>
                 <h4>Comment List</h4>
